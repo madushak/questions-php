@@ -9,7 +9,7 @@ if(isset($_GET['preview'])){
   header('Content-Type: application/force-download');
 }
 
-$con = mysqli_connect("localhost","root","root","questions-app", 8889);
+include_once('db.php');
 
 if (mysqli_connect_errno()) {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();

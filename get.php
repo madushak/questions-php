@@ -4,7 +4,7 @@ header('Access-Control-Allow-Methods: GET, POST');
 header("Access-Control-Allow-Headers: X-Requested-With");
 header("Content-Type: application/json");
 
-$con = mysqli_connect("localhost","root","root","questions-app", 8889);
+include_once('db.php');
 
 if (mysqli_connect_errno()) {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
